@@ -1,39 +1,55 @@
+/* ===============================
+   Root Variables and Fonts
+================================= */
 :root {
   --main-bg: #f5f5f5;
   --highlight: orange;
   --font-stack: 'Roboto', sans-serif;
 }
 
+/* ===============================
+   Base Styles
+================================= */
 body {
   background-color: var(--main-bg, white);
-  font-family: var(--font-stack, Arial);
+  font-family: var(--font-stack, Arial); 
   margin: 0;
   padding: 0;
   color: hsl(210, 20%, 20%);
 }
 
+/* ===============================
+   Header with Longhand Box Model
+================================= */
 header {
   margin-top: 20px;
   margin-right: 10px;
   margin-bottom: 20px;
   margin-left: 10px;
+
   padding-top: 10px;
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
+
   border-style: solid;
   border-width: 2px;
   border-color: #333;
   border-radius: 8px;
 }
 
+/* ===============================
+   Section with Shorthand Box Model
+================================= */
 section {
   margin: 1rem 2rem 1rem 2rem;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em;         
   border: 2px dashed #ccc;
 }
 
-
+/* ===============================
+   Images
+================================= */
 img {
   display: block;
   width: 80%;
@@ -43,17 +59,26 @@ img {
   margin: auto;
 }
 
+/* ===============================
+   Navigation Bar
+================================= */
 nav {
-  position: sticky;
+  position: sticky;   
   top: 0;
   background-color: #eee;
   padding: 0.5rem;
 }
 
+/* ===============================
+   Footer
+================================= */
 footer {
   position: relative;
 }
 
+/* ===============================
+   Main Layout - Grid Example
+================================= */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -61,6 +86,9 @@ main {
   grid-auto-flow: row;
 }
 
+/* ===============================
+   Agenda - Flexbox Example
+================================= */
 #agenda {
   display: flex;
   justify-content: space-around;
@@ -69,7 +97,11 @@ main {
   gap: 1em;
 }
 
+/* ===============================
+   Media Section - Grid Layout
+================================= */
 #media {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
+}
