@@ -132,7 +132,7 @@ cite:active {
 
 /* wide-gamut stuff */
 .wide-gamut {
-  color: color(srgb 1 0.5 0);
+  color: color(srgb 1 0.5 0 / 0.8);
 }
 
 /* selector lst */
