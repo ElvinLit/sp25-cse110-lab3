@@ -6,6 +6,27 @@
   <meta name="author" content="Elvin">
   <title>Black Hat White Hat Meeting</title>
   <link rel="icon" href="favicon.ico">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    form input[type="text"]:hover {
+      border-color: green;
+    }
+
+    p:has(b) {
+      background-color: #ffffcc;
+    }
+  </style>
 </head>
 <body>
 
@@ -58,7 +79,7 @@
 
     <section>
       <h2>Miscellaneous</h2>
-      <p><b>What is everyone's favorite dining hall?</b></p>
+      <p><b style="color: red; background-color: yellow;">What is everyone's favorite dining hall?</b></p>
     </section>
 
     <section>
@@ -68,11 +89,11 @@
 
     <section id="media">
       <h2>Relevant Files for our Meeting</h2>
-    
+
       <audio controls>
         <source src="teamintro.mp3" type="audio/mpeg">
       </audio><br>
-    
+
       <video width="320" height="240" controls>
         <source src="teamintro.mp4" type="video/mp4">
       </video>
