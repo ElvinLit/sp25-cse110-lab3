@@ -15,14 +15,17 @@
 
   <!-- Internal CSS -->
   <style>
+    /* Universal selector */
     * {
       box-sizing: border-box;
     }
 
+    /* Attribute selector + pseudo-class */
     form input[type="text"]:hover {
       border-color: green;
     }
 
+    /* New selector :has() */
     p:has(b) {
       background-color: #ffffcc;
     }
@@ -33,17 +36,19 @@
   <header>
     <h1>Team Black Hat White Hat Meeting</h1>
     <h2>Meeting Topic: Team Branding, Logo, Name, Etc.</h2>
-    <h3 class="wide-gamut">Date: April 10, 2025</h3>
-    <nav>
+    <h3>Date: April 10, 2025</h3>
+    <!-- ID selector + Class selector -->
+    <nav id="main-nav" class="main-nav">
       <a href="#agenda">Agenda</a> | <a href="#media">Media</a>
     </nav>
     <hr>
   </header>
 
   <main>
-    <section class="attendance">
+    <!-- Class selector + ID selector -->
+    <section id="attendance" class="attendance">
       <h2>Attendance</h2>
-      <ul>
+      <ul class="att-list">
         <li><strong>Elvin Li</strong></li>
         <li>Vivian Yu</li>
         <li>Alex Acevedo</li>
@@ -69,7 +74,7 @@
 
     <section>
       <h2>Unfinished Business</h2>
-      <p class="highlight"><em>Team responsibilities and framework familiarities</em> still undecided.</p>
+      <p><em>Team responsibilities and framework familiarities</em> still undecided.</p>
     </section>
 
     <section>
@@ -97,10 +102,6 @@
       <video width="320" height="240" controls>
         <source src="teamintro.mp4" type="video/mp4">
       </video>
-    </section>
-
-    <section>
-      <p class="hide">This paragraph is hidden and should not be visible.</p>
     </section>
 
     <section>

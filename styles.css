@@ -60,7 +60,7 @@ img {
 }
 
 /* ===============================
-   Navigation Bar
+   Navigation Bar (Flex child combinator too)
 ================================= */
 nav {
   position: sticky;
@@ -68,10 +68,10 @@ nav {
   background-color: #eee;
   padding: 0.5rem;
 }
-nav a {
+/* Child combinator */
+nav > a {
+  padding: 0.25rem 0.5rem;
   text-decoration: none;
-  display: inline-block;
-  margin-right: 1em;
 }
 
 /* ===============================
@@ -79,14 +79,13 @@ nav a {
 ================================= */
 footer {
   position: relative;
-  padding: 12pt;
 }
 footer p {
   text-align: center;
 }
 
 /* ===============================
-   Main Layout - Grid Example
+   Main Layout – Grid Example
 ================================= */
 main {
   display: grid;
@@ -95,12 +94,8 @@ main {
   grid-auto-flow: row;
 }
 
-main > section {
-  border-color: var(--highlight);
-}
-
 /* ===============================
-   Agenda - Flexbox Example
+   Agenda – Flexbox Example
 ================================= */
 #agenda {
   display: flex;
@@ -111,7 +106,7 @@ main > section {
 }
 
 /* ===============================
-   Media Section - Grid Layout
+   Media Section – Grid Layout
 ================================= */
 #media {
   display: grid;
@@ -120,78 +115,37 @@ main > section {
 }
 
 /* ===============================
-   Colors, Units, and Typography Enhancements
+   Highlight Class Example
 ================================= */
-.highlight {
-  background-color: rgba(255, 165, 0, 0.3);
-  color: rgb(0, 51, 102);
-  border: 2px solid color-mix(in srgb, orange 50%, var(--main-bg) 50%);
-}
-.wide-gamut {
-  color: color(display-p3 1 0.5 0 / 1);
+.main-nav {
+  /* Class selector */
+  background-color: color-mix(in srgb, var(--main-bg) 70%, black 30%);
+  padding: 0.75rem;
 }
 
-hr {
-  height: 0.2in;
-  background-color: var(--highlight);
-  border: none;
+/* Combining two selectors */
+section.attendance {
+  border-style: double;
 }
 
 /* ===============================
-   Text Styling
+   Nested Selectors (CSS Nesting)
 ================================= */
-h1, h2, h3 {
-  margin-bottom: 0.5em;
-}
-h2 + p {
-  text-indent: 1em;
-}
+ul {
+  list-style-type: square;
 
-/* ===============================
-   Display Property Demonstrations
-================================= */
-.hide {
-  display: none;
-}
-.pseudo-active button:active {
-  transform: scale(0.98);
-}
-
-/* ===============================
-   Selector Lists and Combinators
-================================= */
-input[type="date"] {
-  background-color: #fff;
-  border: 1px solid #333;
-}
-.nav-list a[href] {
-  font-style: italic;
-}
-section ~ section {
-  border-top: 2px solid var(--highlight);
-}
-h1 + h2 {
-  margin-top: 0;
-}
-p.highlight {
-  font-weight: bold;
-}
-
-/* ===============================
-   Flex and Grid Children Styling
-================================= */
-.attendance {
-  & ul {
-    list-style: square inside;
-  }
-  & > ul > li {
-    padding: 0.25em 0;
+  /* nested selector */
+  li {
+    margin-bottom: 0.5rem;
   }
 }
 
-/* ===============================
-   Pseudo-classes and New Selectors
-================================= */
+/* Descendant combinator */
+form input[type="text"] {
+  border: 1px solid #999;
+}
+
+/* Pseudo‑classes */
 h2:hover {
   color: var(--highlight);
 }
@@ -199,8 +153,32 @@ cite:active {
   text-decoration: underline;
 }
 
+/* Wider‑gamut color */
+.wide-gamut {
+  color: color(display-p3 1 0.5 0 / 1);
+}
+
 /* ===============================
-   Responsiveness
+   Selector List + Combinators
+================================= */
+/* selector list */
+#agenda,
+#media {
+  border-radius: 4px;
+}
+
+/* adjacent sibling */
+#agenda + section {
+  border-color: var(--highlight);
+}
+
+/* general sibling */
+#agenda ~ section {
+  opacity: 0.9;
+}
+
+/* ===============================
+   Responsive Media Query
 ================================= */
 @media (max-width: 600px) {
   body {
@@ -209,8 +187,11 @@ cite:active {
   main {
     display: block;
   }
-  #agenda, #media {
-    grid-template-columns: 1fr;
+  #agenda {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  #media {
+    grid-template-columns: 1fr;
   }
 }
