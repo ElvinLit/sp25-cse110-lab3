@@ -1,36 +1,50 @@
-# Daily Standup Notes
+# Team Standup Log
 
-## Date & Time
-_Enter the date and time of this standup_
-
-## Team Members
-- Member 1
-- Member 2
-- Member 3
-
-## Meeting Type
-_Example: Daily Sync, Weekly Review, 1-on-1_
+## Standup Details
+- **Date:** 
+- **Time:** 
+- **Organizer:** 
 
 ---
 
-## Status Updates
+## Summary Round
+Each team member answers:
+- What progress has been made?
+- What progress is being worked towards?
+- Any obstacles?
 
-| Team Member | What I Did Yesterday | What I'm Doing Today | Blockers |
-|-------------|----------------------|-----------------------|----------|
-| Member 1    | ...                  | ...                   | ...      |
-| Member 2    | ...                  | ...                   | ...      |
+### Updates
+
+#### Member 1
+- **Progress:** 
+- **Plan:** 
+- **Blockers:** 
+
+#### Member 2
+- **Progress:** 
+- **Plan:** 
+- **Blockers:** 
 
 ---
 
-## Key Topics
-
-| Topic | Summary | Outcome |
-|-------|---------|---------|
-| ...   | ...     | ...     |
+## Announcements
+- _(e.g., "Need to update README.md")_
+- _(e.g., "We may need to reschedule the next sprint meeting")_
 
 ---
 
-## Action Items
+## Ongoing Tasks & Ownership
 
-- [ ] Action 1 (@assignee)
-- [ ] Action 2 (@assignee)
+| Task                          | Owner        | Status      |
+|-------------------------------|--------------|-------------|
+| Refactor project structure    | Alice        | In progress |
+| Write issue template          | Bob          | Not started |
+| Create meeting minutes layout | Charlie      | Done        |
+
+---
+
+## Action Items for Next Check-in
+
+- [ ] Task 1 (@Alice)
+- [ ] Task 2 (@Bob)
+- [ ] Task 3 (@Charlie)
