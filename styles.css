@@ -65,3 +65,22 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 }
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #eee;
+  padding: 0.5rem;
+}
+
+nav > a {
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+}
+footer p {
+  text-align: center;
+}
