@@ -44,3 +44,24 @@ main {
   flex-wrap: wrap;
   gap: 1em;
 }
+
+section {
+  margin: 1rem 2rem 1rem 2rem;
+  padding: 0.5em 1em;
+  border: 2px dashed #ccc;
+}
+
+img {
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  min-width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+#media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
