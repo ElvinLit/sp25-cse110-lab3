@@ -127,3 +127,19 @@ cite:active {
 #agenda ~ section {
   opacity: 0.9;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    display: block;
+  }
+  #agenda {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #media {
+    grid-template-columns: 1fr;
+  }
+}
