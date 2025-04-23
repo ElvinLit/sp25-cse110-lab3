@@ -28,3 +28,19 @@ header {
   border-color: #333;
   border-radius: 8px;
 }
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+}
+
+#agenda {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
