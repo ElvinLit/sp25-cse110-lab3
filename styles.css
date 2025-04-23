@@ -84,3 +84,46 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+.main-nav {
+  background-color: #ccc;
+  background-color: color-mix(in srgb, #f5f5f5, black);
+  padding: 0.75rem;
+}
+
+section.attendance {
+  border-style: double;
+}
+
+ul {
+  list-style-type: square;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+form input[type="text"] {
+  border: 1px solid #999;
+}
+
+h2:hover {
+  color: var(--highlight);
+}
+cite:active {
+  text-decoration: underline;
+}
+
+#agenda,
+#media {
+  border-radius: 4px;
+}
+
+#agenda + section {
+  border-color: var(--highlight);
+}
+
+#agenda ~ section {
+  opacity: 0.9;
+}
